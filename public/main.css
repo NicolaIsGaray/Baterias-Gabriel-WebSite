@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #005581;
+}
+
+.logo {
+    position: relative;
+    right: 8vw;
+    transform: scale(0.6);
+    display: none;
+}
+
+.header {
+    background-color: rgb(231, 231, 231);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    position: relative;
+    margin-left: 26px;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color: #005581;
+    user-select: none;
+    display: none;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    background: #005581;
+    width: 100%;
+    height: 4px;
+    top: 100%;
+    transition: .4s;
+}
+
+.navbar a:hover::before {
+    width: 0;
+}
+
+.lineal-spacer {
+    background-color: white;
+    content: '';
+    height: 1px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.intro-container {
+    padding-top: 15.8vw;
+}
+
+.intro-main {
+    background-image: linear-gradient(180deg, #033f87, #005581) ;
+    padding: 5.5vw 0vw;
+    text-align: center;
+    color: white;
+    user-select: none;
+}
+
+.intro-main img {
+    max-width: 100%;
+}
+
+.intro-main h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+}
+
+.intro-main h2 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.info-container {
+    padding: 3vw;
+}
+
+.mid-info {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.cards-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100px;
+    height: 124px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    user-select: none;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: none;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    color: #046494;
+    background-color: #ffffff;
+  }
+
+  .flip-card-front p {
+    font-size: 14px;
+  }
+  
+  .flip-card-back {
+    color: white;
+    background-image: linear-gradient(120deg, #005581, #2287b9, #72b9dd);
+    transform: rotateY(180deg);
+  }
+
+  .logo-card {
+    transform: scale(1.4);
+    width: 6vw;
+    position: relative;
+    left: 10.5vw;
+}
+
+.distr-info {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 2vw
+}
+
+.brand-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12vw;
+    margin-top: 10vw;
+}
+
+.battery-brand {
+    color: white;
+    text-align: center;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+.battery-brand-list {
+    content: '';
+    background-color: rgb(219, 219, 219);
+    height: 20vw;
+    width: 20vw;
+    border-radius: 8px;
+    border: none;
+    transition: .6s;
+}
+
+.battery-brand-list:hover{
+    transition: none;
+    transform: none;
+}
+
+.battery-brand-list img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.request-button {
+    transform: scale(0.8);
+    padding: 20px;
+    width: 50vw;
+    border: none;
+    box-shadow: 4px 12px 12px rgba(0,0,0,0.2);
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.request-button:hover {
+    transition: .5s;
+    background-color: #046494;
+    color: white;
+}
+
+.order-button {
+    padding: 18px;
+    width: 50%;
+    border: none;
+    box-shadow: 4px 12px 12px rgba(0,0,0,0.2);
+    background-color: #046494;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.order-button:hover {
+    transition: .5s;
+    background-color: rgba(201, 200, 200, 0.322);
+    color: #046494;
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6vw;
+}
+
+.battery-order {
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 4vw;
+    color: #005581;
+}
+
+.review-container {
+    background-color: rgb(219, 219, 219);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.review-site {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    color: #005581;
+}
+
+#reviewBox {
+    resize: none;
+}
+
+.final-page {
+    content: '';
+    background-color: #01405f;
+    width: 100%;
+    height: 18vw;
+}
+
+
+@media only screen and (min-width: 362px) {
+    .logo {
+        display: block;
+    }
+
+    .intro-main h1 {
+        font-size: 80px;
+    }
+
+    .navbar a {
+        display: block;
+    }
+
+    .intro-container {
+        padding-top: 5vw;
+    }
+
+    .request-button {
+        width: 14vw;
+        transform: scale(1.0);
+    }
+
+    .mid-info {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .distr-info {
+        font-size: 30px;
+    }
+
+    .flip-card {
+        width: 250px;
+        height: 254px;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .logo-card {
+        left: 3.5vw;
+    } 
+
+    .flip-card-front p {
+        font-size: 18px;
+    }
+
+    .brand-container {
+        margin-top: 0vw;
+        margin-bottom: 4vw;
+    }
+    
+    .battery-brand-list {
+        height: 14vw;
+        width: 14vw;
+        margin-right: 1vw;
+    }
+
+    .battery-brand-list:hover{
+        transition: .5s;
+        transform: scale(1.1);
+    }
+
+    .order-button {
+        padding: 20px;
+        width: 12vw;
+        font-size: 20px;
+    }
+}
